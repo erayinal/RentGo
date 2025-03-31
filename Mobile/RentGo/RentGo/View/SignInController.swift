@@ -31,8 +31,13 @@ class SignInController: UIViewController {
     }
     
     @IBAction func signInTapped(_ sender: Any) {
+        
         if(emailTextField.text != "" && passwordTextField.text != ""){
-            performSegue(withIdentifier: "fromSignInToHomeVC", sender: nil)
+            if let email = emailTextField.text, email.contains("@") {
+                performSegue(withIdentifier: "fromSignInToHomeVC", sender: nil)
+            } else {
+                makeAlert(title: "ERROR", message: "Invalid email format!")
+            }
             
         } else{
             makeAlert(title: "ERROR", message: "Please complete all fields!")
