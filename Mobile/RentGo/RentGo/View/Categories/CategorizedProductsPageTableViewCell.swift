@@ -20,6 +20,9 @@ class CategorizedProductsPageTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        productImageView.layer.cornerRadius = 10
+        productImageView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

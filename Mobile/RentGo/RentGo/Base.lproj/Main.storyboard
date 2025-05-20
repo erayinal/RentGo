@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kkq-Qv-vaZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -2598,31 +2598,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hZ-ua-AAD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addEventImages5" translatesAutoresizingMaskIntoConstraints="NO" id="3hZ-ua-AAD">
                                 <rect key="frame" x="0.0" y="103" width="393" height="293"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="293" id="9sV-T4-jxu"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2X6-f7-vvy">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2X6-f7-vvy">
                                 <rect key="frame" x="16" y="421" width="361" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zis-ke-pm8">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zis-ke-pm8">
                                 <rect key="frame" x="16" y="470" width="361" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price per week" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Rs-XG-5LA">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price per week" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Rs-XG-5LA">
                                 <rect key="frame" x="16" y="519" width="175" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moj-r9-Q9m">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moj-r9-Q9m">
                                 <rect key="frame" x="16" y="568" width="361" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Category">
                                     <backgroundConfiguration key="background">
@@ -2633,15 +2631,16 @@
                                     <action selector="productCategoryButtonTapped:" destination="Y4J-AL-jQI" eventType="touchUpInside" id="wZe-Oo-tC2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price per month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ig-gG-Nsf">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price per month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ig-gG-Nsf">
                                 <rect key="frame" x="203" y="519" width="174" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="01R-HT-bYB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdD-vF-HBA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdD-vF-HBA">
                                 <rect key="frame" x="36" y="724" width="321" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add the Product">
                                     <backgroundConfiguration key="background">
@@ -2656,6 +2655,28 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3JL-Wb-bho"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3hZ-ua-AAD" firstAttribute="leading" secondItem="3JL-Wb-bho" secondAttribute="leading" id="3Ny-7B-OkO"/>
+                            <constraint firstItem="3hZ-ua-AAD" firstAttribute="centerX" secondItem="2X6-f7-vvy" secondAttribute="centerX" id="4bj-nW-CpS"/>
+                            <constraint firstItem="Zis-ke-pm8" firstAttribute="leading" secondItem="0Rs-XG-5LA" secondAttribute="leading" id="ACy-H2-YPE"/>
+                            <constraint firstItem="2X6-f7-vvy" firstAttribute="top" secondItem="3hZ-ua-AAD" secondAttribute="bottom" constant="25" id="APu-RQ-BLR"/>
+                            <constraint firstItem="moj-r9-Q9m" firstAttribute="centerX" secondItem="AdD-vF-HBA" secondAttribute="centerX" id="EBI-XG-w8r"/>
+                            <constraint firstItem="2X6-f7-vvy" firstAttribute="leading" secondItem="8KA-JX-6bS" secondAttribute="leadingMargin" id="Fcf-2s-AXj"/>
+                            <constraint firstItem="4ig-gG-Nsf" firstAttribute="trailing" secondItem="moj-r9-Q9m" secondAttribute="trailing" id="H6k-aS-nlG"/>
+                            <constraint firstItem="2X6-f7-vvy" firstAttribute="leading" secondItem="Zis-ke-pm8" secondAttribute="leading" id="JZK-V6-kde"/>
+                            <constraint firstItem="AdD-vF-HBA" firstAttribute="leading" secondItem="3JL-Wb-bho" secondAttribute="leading" constant="36" id="O0f-tW-kgU"/>
+                            <constraint firstItem="moj-r9-Q9m" firstAttribute="top" secondItem="0Rs-XG-5LA" secondAttribute="bottom" constant="15" id="Ort-EE-g0D"/>
+                            <constraint firstItem="2X6-f7-vvy" firstAttribute="trailing" secondItem="8KA-JX-6bS" secondAttribute="trailingMargin" id="ReQ-ET-rze"/>
+                            <constraint firstItem="Zis-ke-pm8" firstAttribute="top" secondItem="2X6-f7-vvy" secondAttribute="bottom" constant="15" id="Rtd-6O-WIi"/>
+                            <constraint firstItem="0Rs-XG-5LA" firstAttribute="leading" secondItem="moj-r9-Q9m" secondAttribute="leading" id="Vtd-lu-kmL"/>
+                            <constraint firstItem="0Rs-XG-5LA" firstAttribute="top" secondItem="Zis-ke-pm8" secondAttribute="bottom" constant="15" id="XBo-wN-lXe"/>
+                            <constraint firstItem="3JL-Wb-bho" firstAttribute="bottom" secondItem="AdD-vF-HBA" secondAttribute="bottom" constant="10" id="Xyu-L5-qP6"/>
+                            <constraint firstItem="4ig-gG-Nsf" firstAttribute="leading" secondItem="0Rs-XG-5LA" secondAttribute="trailing" constant="12" id="cHg-9s-Jfh"/>
+                            <constraint firstItem="0Rs-XG-5LA" firstAttribute="top" secondItem="4ig-gG-Nsf" secondAttribute="top" id="kIB-32-XtD"/>
+                            <constraint firstItem="2X6-f7-vvy" firstAttribute="trailing" secondItem="Zis-ke-pm8" secondAttribute="trailing" id="kKw-3C-dHj"/>
+                            <constraint firstItem="Zis-ke-pm8" firstAttribute="trailing" secondItem="4ig-gG-Nsf" secondAttribute="trailing" id="nDI-1O-iad"/>
+                            <constraint firstItem="3hZ-ua-AAD" firstAttribute="top" secondItem="3JL-Wb-bho" secondAttribute="top" id="vlr-v3-LDw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Product" id="PhI-O5-pdP"/>
                     <connections>
@@ -2910,6 +2931,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AppLogo" width="1024" height="1024"/>
+        <image name="addEventImages5" width="800" height="1200"/>
         <image name="basket" catalog="system" width="128" height="108"/>
         <image name="belowCampaign2" width="546" height="92"/>
         <image name="campaign" width="840" height="445"/>
