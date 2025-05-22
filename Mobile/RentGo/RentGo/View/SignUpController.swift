@@ -48,6 +48,7 @@ class SignUpController: UIViewController, UITextFieldDelegate, URLSessionDelegat
     @IBAction func signUpTapped(_ sender: Any) {
         guard let name = nameTextField.text,
               let surname = surnameTextField.text,
+              let username=usernameTextField.text,
               let email = emailTextField.text,
               let password = passwordTextField.text,
               let confirmPassword = passwordAgainTextField.text,
@@ -65,7 +66,7 @@ class SignUpController: UIViewController, UITextFieldDelegate, URLSessionDelegat
             firstName: name,
             lastName: surname,
             email: email,
-            userName: email,
+            userName: username,
             password: password,
             confirmPassword: confirmPassword
         )
